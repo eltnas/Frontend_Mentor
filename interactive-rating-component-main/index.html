@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./Assets/css/styles.css" />
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; color: white; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <header>
+    <div id="box-cbc">
+      <section id="cabecalho">
+        <div id="star">
+          <img src="./Assets/images/icon-star.svg" />
+        </div>
+        <div id="titulo">
+          <h1>How did we do?</h1>
+        </div>
+        <div id="texto">
+          <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+        </div>
+
+        <!-- Rating state end -->
+        <div id="botao">          
+          <input type="button" value="1" class="btn" />
+          <input type="button" value="2" class="btn" />
+          <input type="button" value="3" class="btn" />
+          <input type="button" value="4" class="btn" />
+          <input type="button" value="5" class="btn" />
+        </div>
+        <div id="envio">
+          <input type="button" value="Submit" id="btn-envio">
+        </div>
+      </section>
+
+    </div>
+
+      <!-- Thank you state start -->
+    <div id="box-tks">
+      <section id="selected">
+        <div id="imgSel">
+          <img src="./Assets/images/illustration-thank-you.svg" alt="Thank You" />
+        </div>
+        <div id="selecao">
+          <p id="numSel">You selected <!-- Add rating here --> out of 5</p>
+        </div>
+
+        <div id="obrigado">
+          <h1>Thank you!</h1>
+          <p>We appreciate you taking the time to give a rating.</p>
+          <p>If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+        </div>
+      </section>
+    </div>
+    <!-- Thank you state end --> 
+    
+  </header>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://eltnas.github.io/">Elton C. Nascimento</a>.
+  </div>
+
+  <script src="./Assets/js/js.js"></script>
+</body>
+</html>

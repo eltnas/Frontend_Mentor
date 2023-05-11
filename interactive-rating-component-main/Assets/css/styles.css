@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --bkg-fundo: #141519;
+    --bkg-box: #1E252F;
+    --bkg-cicle: #20303E;
+    --bkg-active: #7C8798;
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bkg-fundo);
+    font-family: 'Overpass', sans-serif;
+    font: var(--Font-size);
+}
+
+header {
+    width: 90%;
+    height: 90%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header #box-cbc {
+    display: block;
+    width: 500px;
+    height: 500px;
+    background-color: var(--bkg-box);
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 375px)
+{
+    header{
+        width: 90%;
+        height: 90%;
+    }
+
+    #box-cbc{
+        width: 100%;
+        height: 100%;
+    }
+
+    #box-tks{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+header #box-cbc #cabecalho {
+    padding: 50px;
+}
+
+header #box-cbc #cabecalho #star {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bkg-cicle);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header #box-cbc #cabecalho #star img {
+    width: 50%;
+    height: 50%;
+}
+
+header #box-cbc #cabecalho #titulo {
+    margin: 20px 0 0 0;
+    font-size: 1.4em;
+    color: var(--White);
+}
+
+header #box-cbc #cabecalho #texto {
+    margin: 20px 0 0 0;
+    font-size: 1.2em;
+    color: var(--Medium-Grey);
+}
+
+header #box-cbc #cabecalho #botao {
+    width: 90%;
+    height: 50px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+header #box-cbc #cabecalho #botao .btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bkg-cicle);
+    border: none;
+    font-size: 1.3em;
+    color: var(--Medium-Grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header #box-cbc #cabecalho #botao .btn:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+header #box-cbc #cabecalho #envio {
+    width: 90%;
+    height: 50px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+header #box-cbc #cabecalho #envio input{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: var(--Orange);
+    border: none;
+    font-size: 1.3em;
+    color: var(--White);
+}
+
+header #box-cbc #cabecalho #envio input:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+header #box-tks {
+    display: none;
+    width: 500px;
+    height: 500px;
+    background-color: var(--bkg-box);
+    border-radius: 50px;
+}
+
+header #box-tks #selected{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header #box-tks #selected #imgSel {
+    margin: 0 0 20px 0;
+}
+
+header #box-tks #selected #selecao {
+    height: 30px;
+    width: 180px;
+    background-color: var(--bkg-cicle);
+    text-align: center;
+    color: var(--Orange);
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+header #box-tks #selected #obrigado {
+    width: 85%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+header #box-tks #selected #obrigado h1{
+    padding: 10px 0 20px 0;
+    font-size: 30px;
+    color: var(--White);
+}
+
+header #box-tks #selected #obrigado p{
+    font-size: 15px;
+    color: var(--Light-Grey);
+}
+
+
+.attribution {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: var(--White);
+    font-size: .7em;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
