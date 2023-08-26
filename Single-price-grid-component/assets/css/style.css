@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(152, 166, 189, 0.4);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+#container {
+  display: grid;
+  place-items: center;
+}
+#container #card {
+  width: 90%;
+  max-width: 400px;
+  height: 150vh;
+  background-color: #ffffff;
+  margin: 2rem auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 600px) {
+  #container #card {
+    max-width: 700px;
+    height: 80vh;
+  }
+}
+#container #card #half-top {
+  padding: 1rem;
+  flex: 1;
+}
+#container #card #half-top h2 {
+  margin: 0 0 1rem 0;
+  color: hsl(179, 62%, 43%);
+  font-size: 1.5em;
+}
+#container #card #half-top h3 {
+  margin: 0 0 1rem 0;
+  color: hsl(71, 73%, 54%);
+  font-size: 1.1em;
+}
+#container #card #half-top p {
+  margin: 0 0 1rem 0;
+  color: rgba(152, 166, 189, 0.9);
+  font-size: 1.1em;
+}
+#container #card #half-bottom {
+  flex: 2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 600px) {
+  #container #card #half-bottom {
+    flex: 1;
+    flex-direction: row;
+  }
+}
+#container #card #half-bottom h2 {
+  font-size: 1.3em;
+  margin: 0 0 1rem 0;
+}
+#container #card #half-bottom #price {
+  flex: 1;
+  padding: 1rem;
+  background-color: #2ab2af;
+}
+#container #card #half-bottom #price #money {
+  font-size: 1em;
+  margin: 0 0 1rem 0;
+}
+#container #card #half-bottom #price #money span {
+  font-size: 1.8em;
+  margin: 0 5px 0 0;
+}
+#container #card #half-bottom #price #btn {
+  width: 95%;
+  height: 50px;
+  margin: 2rem auto;
+  border-radius: 5px;
+  background-color: hsl(71, 73%, 54%);
+  border: hsl(71, 73%, 54%);
+  box-shadow: #1E252F;
+  color: #ffffff;
+}
+#container #card #half-bottom #why-us {
+  flex: 1;
+  padding: 1rem;
+  background-color: rgba(42, 178, 175, 0.7);
+}
+#container #card #half-bottom #why-us p {
+  color: #e5eff5;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */

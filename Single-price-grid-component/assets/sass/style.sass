@@ -1,0 +1,111 @@
+@import 'variable'
+@import "mixins"
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background-color: rgba($Grayish-Blue, .4)
+  font-family: 'Karla', sans-serif
+  font-size: $Body-Copy
+
+#container
+  display: grid
+  place-items: center
+
+  & #card
+    width: 90%
+    max-width: 400px
+    height: 150vh
+    background-color: #ffffff
+    margin: 2rem auto
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+    @include desktop(600px)
+      max-width: 700px
+      height: 80vh
+
+    & #half-top
+      padding: 1rem
+      flex: 1
+
+      & h2
+        margin: 0 0 1rem 0
+        color: $Cyan
+        font-size: 1.5em
+
+      & h3
+        margin: 0 0 1rem 0
+        color: $Bright-Yellow
+        font-size: 1.1em
+
+      & p
+        margin: 0 0 1rem 0
+        color: rgba($Grayish-Blue, .9)
+        font-size: 1.1em
+
+
+
+    & #half-bottom
+      flex: 2
+      color: #ffffff
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+
+      @include desktop(600px)
+        flex: 1
+        flex-direction: row
+
+      & h2
+        font-size: 1.3em
+        margin: 0 0 1rem 0
+
+      & #price
+        flex: 1
+        padding: 1rem
+        background-color: rgba($Cyan, 1)
+
+        & #money
+          font-size: 1em
+          margin: 0 0 1rem 0
+
+          & span
+            font-size: 1.8em
+            margin: 0 5px 0 0
+
+        & #btn
+          width: 95%
+          height: 50px
+          margin: 2rem auto
+          border-radius: 5px
+          background-color: $Bright-Yellow
+          border: $Bright-Yellow
+          box-shadow: #1E252F
+          color: #ffffff
+
+      & #why-us
+        flex: 1
+        padding: 1rem
+        background-color: rgba($Cyan, .7)
+
+        & p
+          color: rgba($Light-Gray, 1)
+
+footer
+  width: 100%
+  position: relative
+  bottom: 10px
+
+.attribution
+  font-size: 11px
+  text-align: center
+
+  & a
+    color: hsl(228, 45%, 44%)
